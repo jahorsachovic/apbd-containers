@@ -12,7 +12,7 @@ class Program
 
         LiquidContainer container1 = new LiquidContainer(200, 300, 500, 1200);
         RefrigeratedContainer container2 = new RefrigeratedContainer(300, 400, 750, 750, 18, Product.Sausages);
-        GasContainer container3 = new GasContainer(300, 500, 800, 1200);
+        GasContainer container3 = new GasContainer(300, 500, 800, 1200, 240000);
 
         Ship ship = new Ship(6, 7.8, 25);
         
@@ -29,5 +29,6 @@ class Program
         
         container1.PrintInfo();
         container2.PrintInfo();
+        container3.PrintInfo();
     }
 }

@@ -5,9 +5,11 @@ public class GasContainer : Container, IHazardNotifier
 {
     private int Pressure { get; }
     
-    public GasContainer(int height, int depth, int tareMass, int maxPayload)
+    public GasContainer(int height, int depth, int tareMass, int maxPayload, int pressure)
         : base (height, depth, tareMass, maxPayload, "G")
     {
+        Pressure = pressure;
+
     }
 
     public override void EmptyCargo()
