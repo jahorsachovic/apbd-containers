@@ -30,12 +30,12 @@ public class LiquidContainer : Container, IHazardNotifier
         }
         if (cargoMass + CargoMass > MaxPayload)
         {
-            throw new OverfillException($"Cargo mass for {SerialNumber} exceeds maximum payload!");
+            throw new OverfillException($"{SerialNumber}: Cargo exceeds maximum payload!");
         }
         
         CargoMass = cargoMass + CargoMass;
         IsCargoHazardous = isCargoHazardous;
-        Console.WriteLine($"Added cargo to {SerialNumber}");
+        Console.WriteLine($"Added cargo to {SerialNumber}.");
 
     }
 

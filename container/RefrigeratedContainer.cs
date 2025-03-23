@@ -40,5 +40,4 @@ public class RefrigeratedContainer : Container
         base.PrintInfo();
         Console.WriteLine($"Product type: {_product}\n");
     }
-    
 }

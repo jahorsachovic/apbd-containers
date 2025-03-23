@@ -6,10 +6,11 @@ public abstract class Container
     private static int _counter;
     private static int Height { get; set; }
     private static int Depth { get; set; }
-    double TareMass { get; }
-    protected double CargoMass { get; set; }
+    public double TareMass { get; }
+    public double CargoMass { get; set; }
     public string SerialNumber { get; }
     protected double MaxPayload { get; }
+    public bool Assigned { get; set; }
 
     protected Container(int height, int depth, double tareMass, double maxPayload, string type)
     {
@@ -32,10 +33,11 @@ public abstract class Container
     {
         if (cargoMass + CargoMass > MaxPayload)
         {
-            throw new OverfillException($"{SerialNumber}: Assigned cargo exceeds maximum payload.");
+            throw new OverfillException($"{SerialNumber}: Cargo exceeds maximum payload.");
         }
         
         CargoMass = cargoMass + cargoMass;
+        Console.WriteLine($"Added cargo to {SerialNumber}.");
     }
 
     public virtual void PrintInfo()
@@ -48,4 +50,8 @@ public abstract class Container
                           $"Current payload: {CargoMass}kg");
     }
 
+    public override string ToString()
+    {
+        return $"{SerialNumber}";
+    }
 }
