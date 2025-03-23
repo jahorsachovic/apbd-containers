@@ -1,0 +1,14 @@
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/bin/Debug/net9.0/apbd-containers
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/bin/Debug/net9.0/apbd-containers.deps.json
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/bin/Debug/net9.0/apbd-containers.runtimeconfig.json
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/bin/Debug/net9.0/apbd-containers.dll
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/bin/Debug/net9.0/apbd-containers.pdb
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.GeneratedMSBuildEditorConfig.editorconfig
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.AssemblyInfoInputs.cache
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.AssemblyInfo.cs
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.csproj.CoreCompileInputs.cache
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.dll
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/refint/apbd-containers.dll
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.pdb
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.genruntimeconfig.cache
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/ref/apbd-containers.dll
