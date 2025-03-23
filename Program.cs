@@ -46,6 +46,7 @@ class Program
         
         ship.PrintInfo();
         ship.TransferContainer(container1, ship2);
+        ship.RemoveContainer(container3);
         ship2.ReplaceContainer(container1, container3);
         ship2.PrintInfo();
     }

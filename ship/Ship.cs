@@ -52,6 +52,7 @@ public class Ship
         {
             Containers.Remove(container);
             container.Assigned = false;
+            Console.WriteLine($"Ship {_id}: Removed {container.SerialNumber}");
         } else
         {
             Console.WriteLine($"Ship {_id}: There is no {container.SerialNumber} on this ship.");
@@ -60,7 +61,9 @@ public class Ship
 
     public void TransferContainer(Container container, Ship destinationShip)
     {
+        
         RemoveContainer(container);
+        Console.WriteLine("XD");
         destinationShip.AddContainer(container);
     }
 
