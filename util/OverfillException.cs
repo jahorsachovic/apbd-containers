@@ -1,4 +1,4 @@
-namespace ApbdContainers;
+namespace ApbdContainers.util;
 
 [Serializable]
 public class OverfillException : Exception

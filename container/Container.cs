@@ -1,48 +1,51 @@
-namespace ApbdContainers;
+namespace ApbdContainers.container;
+using util;
 
 public abstract class Container
 {
     private static int _counter;
-    public int Height { get; }
-    public int Depth { get; }
-    public int TareMass { get; }
-    public int CargoMass { get; set; }
-    public ContainerType Type { get; }
+    private static int Height { get; set; }
+    private static int Depth { get; set; }
+    double TareMass { get; }
+    protected double CargoMass { get; set; }
     public string SerialNumber { get; }
-    public int MaxPayload { get; }
+    protected double MaxPayload { get; }
 
-    protected Container(int height, int depth, int tareMass, int maxPayload, ContainerType type)
+    protected Container(int height, int depth, double tareMass, double maxPayload, string type)
     {
         Height = height;
         Depth = depth;
         TareMass = tareMass;
         MaxPayload = maxPayload;
-        Type = type;
         
         _counter++;
         SerialNumber = $"KON-{type}-{_counter}";
     }
 
-    protected virtual void EmptyCargo()
+    public virtual void EmptyCargo()
     {
         CargoMass = 0;
         Console.WriteLine($"Cargo for {SerialNumber} emptied.");
     }
 
-    protected virtual void FillCargo(int cargoMass)
+    public virtual void AddCargo(int cargoMass)
     {
-        if (cargoMass > MaxPayload)
+        if (cargoMass + CargoMass > MaxPayload)
         {
-            throw new OverfillException($"{SerialNumber}: Assigned cargo exceeds maximum payload");
+            throw new OverfillException($"{SerialNumber}: Assigned cargo exceeds maximum payload.");
         }
-
-        CargoMass = cargoMass;
+        
+        CargoMass = cargoMass + cargoMass;
     }
 
-    protected internal void PrintInfo()
+    public virtual void PrintInfo()
     {
-        Console.Write($"{SerialNumber}: ");
-        Console.WriteLine($"{Depth}x{Height}cm, mass {TareMass}kg, max payload {MaxPayload}kg, cargo {CargoMass}kg");
+        Console.WriteLine($"\nContainer: {SerialNumber}\n" +
+                          $"Height: {Height}cm\n" +
+                          $"Depth: {Depth}cm\n" +
+                          $"Tare mass: {TareMass}kg\n" +
+                          $"Max payload: {MaxPayload}kg\n" +
+                          $"Current payload: {CargoMass}kg");
     }
-    
+
 }

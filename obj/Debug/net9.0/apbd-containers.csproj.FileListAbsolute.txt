@@ -12,3 +12,4 @@
 /home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.pdb
 /home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.genruntimeconfig.cache
 /home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/ref/apbd-containers.dll
+/home/jszblackmage/Studying/APBD/projects/apbd-containers/obj/Debug/net9.0/apbd-containers.sourcelink.json
